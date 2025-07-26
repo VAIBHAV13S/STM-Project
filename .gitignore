@@ -1,0 +1,166 @@
+# Smart Traffic Management System - Git Ignore File
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Machine Learning Models & Training Data
+ml/intent_predictor_*.pkl
+ml/intent_predictor_*_scaler.pkl
+ml/intent_predictor_*_encoder.pkl
+ml/intent_predictor_*_features.txt
+ml/intent_predictor_*_summary.txt
+ml/training_data.csv
+ml/*.png
+ml/plots/
+
+# Generated Data Files
+data/vehicle_data_*.csv
+data/sample_*.csv
+data/temp_*.csv
+
+# SUMO Generated Files
+sumo/data/
+sumo/*.sumocfg
+sumo/*.xml.backup
+sumo/*.log
+sumo/tripinfo.xml
+sumo/summary.xml
+sumo/detector.xml
+sumo/emissions.xml
+
+# Scheduling Output
+scheduling/schedule_*.json
+scheduling/traffic_data.csv
+scheduling/temp_*.csv
+
+# Visualization Temporary Files
+visualization/dashboard_data.csv
+visualization/temp_*.csv
+visualization/*.png
+visualization/*.html
+
+# Hardware Logs
+hardware/logs/
+hardware/*.log
+
+# System & Temporary Files
+*.tmp
+*.temp
+*.log
+.cache/
+logs/
+
+# Output & Results
+output/
+results/
+exports/
+reports/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Configuration Files (if they contain sensitive data)
+config.ini
+.env.local
+.env.production
+secrets.yaml
+
+# Documentation Build
+docs/_build/
+docs/build/
+
+# Test Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Performance & Profiling
+*.prof
+*.lprof
+
+# Keep Important Files (Negation)
+!requirements.txt
+!README.md
+!.gitignore
+!demo.py
+!main.py
+
+# Keep Core Source Directories Structure
+!sumo/
+!ml/
+!scheduling/
+!visualization/
+!hardware/
+!data/
+
+# Keep Essential Files in Subdirectories
+!sumo/*.py
+!sumo/*.xml
+!sumo/routes/
+!sumo/routes/*.xml
+
+!ml/*.py
+!scheduling/*.py
+!visualization/*.py
+!hardware/*.py
+
+# Keep One Sample Data File for Reference
+!data/.gitkeep
+
+# Project Specific Exceptions
+# Add any project-specific files that should be ignored here

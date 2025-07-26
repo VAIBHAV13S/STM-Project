@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50.0" color="yellow"/>
+
+    <!-- Simple Routes -->
+    <route id="north_south" edges="north_in south_out"/>
+    <route id="south_north" edges="south_in north_out"/>
+    <route id="east_west" edges="east_in west_out"/>
+    <route id="west_east" edges="west_in east_out"/>
+    <route id="north_east" edges="north_in east_out"/>
+    <route id="south_west" edges="south_in west_out"/>
+    <route id="east_south" edges="east_in south_out"/>
+    <route id="west_north" edges="west_in north_out"/>
+
+    <!-- Traffic Flows -->
+    <flow id="flow_north_south" route="north_south" begin="0" end="600" vehsPerHour="300" type="car"/>
+    <flow id="flow_south_north" route="south_north" begin="0" end="600" vehsPerHour="300" type="car"/>
+    <flow id="flow_east_west" route="east_west" begin="0" end="600" vehsPerHour="200" type="car"/>
+    <flow id="flow_west_east" route="west_east" begin="0" end="600" vehsPerHour="200" type="car"/>
+    <flow id="flow_north_east" route="north_east" begin="0" end="600" vehsPerHour="100" type="car"/>
+    <flow id="flow_south_west" route="south_west" begin="0" end="600" vehsPerHour="100" type="car"/>
+    <flow id="flow_east_south" route="east_south" begin="0" end="600" vehsPerHour="100" type="car"/>
+    <flow id="flow_west_north" route="west_north" begin="0" end="600" vehsPerHour="100" type="car"/>
+
+</routes>
