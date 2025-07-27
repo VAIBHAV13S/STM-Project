@@ -19,10 +19,21 @@ seaborn>=0.12.0
 # Data Processing
 scipy>=1.11.0
 
-# Hardware (Raspberry Pi)
-# Uncomment the following for Raspberry Pi deployment:
-# RPi.GPIO>=0.7.1
-# gpiozero>=1.6.2
+# Computer Vision
+opencv-python>=4.8.0
+
+# Hardware Simulation (Cross-platform)
+gpiozero>=2.0.1  # Works on Windows in simulation mode
+
+# Hardware (Raspberry Pi ONLY - Install manually on Pi)
+# These will FAIL on Windows/Mac - only install on actual Raspberry Pi:
+# RPi.GPIO>=0.7.1    # Raspberry Pi GPIO - Linux only
+# picamera>=1.13     # Pi Camera - Raspberry Pi only
+
+# Development Note: 
+# - gpiozero works on Windows in simulation mode
+# - RPi.GPIO and picamera only work on actual Raspberry Pi hardware
+# - All hardware modules gracefully fall back to simulation mode
 
 # Networking and Communication
 requests>=2.31.0

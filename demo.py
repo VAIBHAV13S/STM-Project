@@ -216,7 +216,7 @@ class SmartTrafficDemo:
             
             # Launch Streamlit dashboard
             result = subprocess.run([
-                "streamlit", "run", "dashboard.py", 
+                sys.executable, "-m", "streamlit", "run", "dashboard.py", 
                 "--server.headless", "false",
                 "--server.port", "8501"
             ], timeout=30)  # Run for 30 seconds in demo mode
@@ -252,8 +252,8 @@ class SmartTrafficDemo:
         try:
             # Run hardware simulation
             result = subprocess.run([
-                "python", "traffic_light_controller.py", 
-                "--demo", "--duration", "30"
+                "python", "traffic_lights.py", 
+                "--simulation", "--duration", "30"
             ], capture_output=True, text=True, timeout=45)
             
             if result.returncode == 0:
